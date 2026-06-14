@@ -143,7 +143,7 @@ const Navbar = () => {
 
                   {/* 1. MEGA DROPDOWN PANEL (Exact 8px top shift without extra outlines/borders) */}
                   {item.hasMegaMenu && openMenuId === item.id && (
-                    <div className="absolute left-0 top-[100%] w-[520px] bg-white rounded-xl shadow-xl border border-gray-100 flex overflow-hidden z-50 animate-fadeIn">
+                    <div className="absolute left-0 top-full w-130 bg-white rounded-xl shadow-xl border border-gray-100 flex overflow-hidden z-50 animate-fadeIn">
                       {/* Left Column (Categories) */}
                       <div className="w-[52%] border-r border-gray-100 p-2 bg-gray-50/50 flex flex-col justify-between">
                         <div className="space-y-0.5">
@@ -225,7 +225,7 @@ const Navbar = () => {
 
                   {/* 2. REGULAR STANDARD DROPDOWN (For English, Store, Others - Exactly 8px top spacing) */}
                   {item.hasDropdown && openMenuId === item.id && (
-                    <div className="absolute left-0 top-[100%] w-48 bg-white rounded-lg shadow-xl border border-gray-100 p-1 z-50 animate-fadeIn">
+                    <div className="absolute left-0 top-full w-48 bg-white rounded-lg shadow-xl border border-gray-100 p-1 z-50 animate-fadeIn">
                       {item.dropdownItems.map((dropItem, idx) => (
                         <Link
                           key={idx}
@@ -279,7 +279,7 @@ const Navbar = () => {
 
               {/* Popular Search Suggestions Overlay */}
               {isSearchFocused && (
-                <div className="absolute left-0 right-0 top-[100%] bg-white rounded-b-2xl shadow-xl border-x border-b border-gray-200 p-4 z-50 animate-fadeIn">
+                <div className="absolute left-0 right-0 top-full bg-white rounded-b-2xl shadow-xl border-x border-b border-gray-200 p-4 z-50 animate-fadeIn">
                   <div className="text-xs font-bold text-gray-500 mb-3 flex items-center gap-1.5">
                     <span>✨</span> জনপ্রিয় অনুসন্ধান
                   </div>
@@ -326,13 +326,13 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* Hotline (16910) */}
+            {/* Hotline (23443) */}
             <a
-              href="tel:16910"
+              href="tel:23443"
               className="hidden sm:flex items-center gap-1 text-sm font-bold text-gray-700 hover:text-emerald-600 transition-colors"
             >
               <span className="text-emerald-600 text-base">📞</span>
-              <span className="font-mono">16910</span>
+              <span className="font-mono">23443</span>
             </a>
 
             {/* Login Button */}
