@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { ImWhatsapp } from "react-icons/im";
+
+
 
 const Footer = () => {
   // ডাইনামিক লিঙ্ক কনফিগারেশন
@@ -19,8 +22,9 @@ const Footer = () => {
     ],
   };
 
+
   return (
-    <footer className="bg-[#11141a] text-gray-300 pt-16 pb-8 relative font-sans">
+    <footer className="bg-[#191c21] text-gray-300 pt-16 pb-18 relative font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Grid Content */}
@@ -90,10 +94,10 @@ const Footer = () => {
             
             <div className="space-y-3 text-sm">
               <p className="text-gray-400">
-                কল করুন: <a href="tel:16910" className="text-emerald-500 font-bold hover:underline ml-1">16910</a> <span className="text-xs text-gray-500">(24x7)</span>
+                কল করুন: <a href="tel:23443" className="text-emerald-500 font-bold hover:underline ml-1">23443</a> <span className="text-xs text-gray-500">(24x7)</span>
               </p>
               <p className="text-gray-400">
-                হোয়াটসঅ্যাপ: <a href="https://wa.me/8801896016252" target="_blank" rel="noreferrer" className="text-emerald-500 font-bold hover:underline ml-1">+8801896016252</a> <span className="text-xs text-gray-500">(24x7)</span>
+                হোয়াটসঅ্যাপ: <a href="https://wa.me/" target="_blank" rel="noreferrer" className="text-emerald-500 font-bold hover:underline ml-1">+8801453212345</a> <span className="text-xs text-gray-500">(24x7)</span>
               </p>
               <p className="text-gray-400">
                 দেশের বাহির থেকে: <span className="text-emerald-500 font-bold ml-1">+880 9610916910</span>
@@ -117,7 +121,6 @@ const Footer = () => {
                   rel="noreferrer"
                   className="w-8 h-8 rounded-lg bg-[#22262f] hover:bg-emerald-600 hover:text-white text-gray-400 flex items-center justify-center transition-all text-sm"
                 >
-                  {/* ডামি টেক্সট আইকন/সিম্বল (রিয়েল প্রোজেক্টে আপনি Lucide বা FontAwesome/React-Icons বসাতে পারেন) */}
                   <span className="capitalize font-mono text-[10px] font-bold">{platform[0]}</span>
                 </a>
               ))}
@@ -142,8 +145,8 @@ const Footer = () => {
           💬
         </button>
         {/* WhatsApp Trigger */}
-        <a href="https://wa.me/8801896016252" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95">
-          🟢
+        <a href="https://wa.me/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95">
+          <ImWhatsapp />
         </a>
       </div>
     </footer>
