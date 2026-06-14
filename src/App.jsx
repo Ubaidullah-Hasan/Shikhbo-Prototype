@@ -8,9 +8,9 @@ function App() {
         <Navbar />
         
         {/* Main Content Area */}
-        <div className="max-w-7xl mx-auto p-8">
+        {/* <div className="max-w-7xl mx-auto p-8">
           <h1 className="text-4xl font-bold mt-10">শিখবো প্রোটোটাইপ এ স্বাগতম!</h1>
-        </div>
+        </div> */}
       </div>
     </>
   );
